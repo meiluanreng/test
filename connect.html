@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Connect!</title>
+
+<style>
+
+@media (max-width:480px) {
+
+body{
+  background-color: #DAE5D0;
+}
+
+input{
+  height: 20px;
+  width: 280px;
+  background-color:#EFFFFD;
+  border-radius:7px;
+  color:#C69B7B;
+}
+
+label{
+display:none;
+}
+
+#submit{
+  width:70px;
+  border-width:2px;
+  border-color:#C69B7B;
+}
+
+}
+
+@media (min-width:481px) {
+
+body{
+  background-color: #FCD8D4;
+}
+
+
+input{
+  height: 25px;
+  width: 300px;
+  background-color:#EFFFFD;
+  border-radius:10px;
+  color:#5B7DB1;
+}
+
+label{
+display:none;
+}
+
+#submit{
+  width:70px;
+}
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div style="width:100%;text-align:center">
+
+<form action="http://davidkarlins.com/welcome.php" method="post">
+
+<h1>Contact Info...</h1>
+
+<p><label for="name">Name: </label>
+
+<input name="name" id="name" placeholder="Name">
+
+<p><label for="email">Email: </label>
+
+<input name="email" id="email" placeholder="Email" required>
+
+<p><label for="url">URL: </label>
+
+<input name="url" id="url" placeholder="URL" required>
+
+<!-- 注意 required元素 提醒没有输入元素 -->
+
+<p><label for="phone">Phone: </label>
+
+<input name="phone" id="phone" placeholder="Phone Number">
+
+<p>Best time to call:
+
+<br>
+
+<input name="time" id="time">
+
+<p><input type="submit" value="connect!" id="submit">
+
+<!-- 让每个元素保持单独的一行 -->
+
+</form>
+</div>
+
+</body>
+
+</html>
